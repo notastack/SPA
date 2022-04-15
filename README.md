@@ -1,0 +1,2 @@
+# SPA
+Simple PAssword manager

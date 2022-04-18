@@ -10,7 +10,7 @@ else
 	sudo apt install apg > /dev/null ; sudo apt install openssl > /dev/null
 fi
 #check if password already exist
-if [ -r ./spa/$1.enc ];
+if [ -r ./.spa/$1.enc ];
 then
 #if yes then read password
 	openssl rsautl -decrypt -in ./.spa/$1.enc -out ./.spa/$1 -inkey ./.spa/private-key.pem

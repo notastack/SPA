@@ -6,8 +6,8 @@ then
 	echo Thank you for your continuing patronage.
 else
 	mkdir .spa
-	echo Thank you for choosing the SPA.
 	sudo apt install apg > /dev/null ; sudo apt install openssl > /dev/null
+	echo Thank you for choosing the SPA.
 fi
 #check if password already exist
 if [ -r ./.spa/$1.enc ];

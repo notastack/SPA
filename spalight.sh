@@ -15,6 +15,6 @@ then
 else
 	apg -M SNCL -m 10 -n 1 > ./.spa/$1
   cat ./.spa/$1
-	openssl rsautl -encrypt -in ./.spa/$1 -out ./.spa/$1.enc -inkey ./.spa/public-key.pem -pubin || ( echo no key found, genrerating new ones. ;  openssl genrsa -out ./.spa/private-key.pem 2048 ; openssl rsa -pubout -in ./.spa/private-key.pem -out ./.spa/public-key.pem ; openssl rsautl -encrypt -in ./.spa/$1 -out ./.spa/$1.enc -inkey ./.spa/public-key.pem -pubin )
+	openssl rsautl -encrypt -in ./.spa/$1 -out ./.spa/$1.enc -inkey ./.spa/public-key.pem -pubin || ( echo no key found, genrerating new ones. ;  openssl genrsa -out ./.spa/private-key.pem 2048 ; openssl rsa -pubout -in ./.spa/private-key.pem -out ./.spa/public-key.pem ; openssl rsautl -encrypt -in ./.spa/$1 -out ./.spa/$1.enc -inkey ./.spa/public-key.pem -pubin ) > /dev/null
 	rm ./.spa/$1
 fi

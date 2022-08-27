@@ -1,5 +1,5 @@
 #!/bin/bash
-#alias spall='/home/workpad/spa/SPA/spalightplus.sh'
+#alias spall='/whereyouinstalledspa/spalightplus.sh'
 if [ -r ./.spa/$1.enc ];
 then
 	openssl rsautl -decrypt -in ./.spa/$1.enc -out ./.spa/$1 -inkey ./.spa/private-key.pem

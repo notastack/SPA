@@ -5,7 +5,7 @@ then
 else
 	mkdir .spa
 	sudo apt install apg > /dev/null ; sudo apt install openssl > /dev/null
-	alias spal='/home/workpad/spa/SPA/spalight.sh'
+	alias spal='/whereyouinstalledspa/spalight.sh'
 fi
 if [ -r ./.spa/$1.enc ];
 then

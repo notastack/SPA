@@ -10,7 +10,7 @@ else
 	mkdir .spa
 	sudo apt install apg > /dev/null ; sudo apt install openssl > /dev/null
 	#obviously change the line below to where you installed the script
-	alias spa='/home/workpad/spa/SPA/spa.sh'
+	alias spa='/whereyouinstalledspa/spa.sh'
 	echo Thank you for choosing the SPA.
 fi
 #check if password already exist

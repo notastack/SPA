@@ -6,9 +6,11 @@ To use it, just launch the script with the name of the service you wish to have 
 It’ll either create a new password for you or output the current password.
 You can delete the password by deleting .spa/service.enc
 
-Normal version is for user friendly usage. It’ll auto install all dependencies.
-Light version is for interacting with other software.
-Light Plus version is more light but will require you to do all the setup yourself before using it
+Normal version is for user friendly usage. It’ll do all the set up by itself.
+
+Light version is for interacting with other software. It’ll still auto install all dependencies.
+
+Light Plus version is more light but will require you to do all the setup yourself before using it.
 
 
 /*

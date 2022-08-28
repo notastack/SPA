@@ -10,7 +10,7 @@ Normal version is for user friendly usage. It’ll do all the set up by itself.
 
 Light version is for interacting with other software. It’ll still auto install all dependencies.
 
-Light Plus version is more light but will require you to do all the setup yourself before using it.
+Light Plus version is more light but will require you to do all the setup yourself before using it. You should add [alias spall='/whereyouinstalledspa/spalightplus.sh'] to your system to make it easier to use.
 
 
 /*
